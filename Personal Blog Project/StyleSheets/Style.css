@@ -1,0 +1,17 @@
+@import 'HomeStyle.css';
+@import 'BlogPostStyle.css';
+@import 'SubscribeStyle.css';
+
+body {
+  margin: 0;  
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+article {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  color: #1f2932;
+}

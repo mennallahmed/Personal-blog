@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <link rel="stylesheet" href="StyleSheets/Style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <script>
+
+      //TODO: Redirect to Post pages
+      function pageRedirect() {
+        window.location.href = "HtmlPages/BlogPost.html";
+      }  
+      
+      function pageRedirect2() {
+        window.location.href = "HtmlPages/BlogPostTulips.html";
+      }  
+
+      function pageRedirect3() {
+        window.location.href = "HtmlPages/BlogPostAster.html";
+      } 
+
+      function pageRedirect4() {
+        window.location.href = "HtmlPages/BlogPostPeonies.html";
+      } 
+     </script> 
+
+  </head>
+  <body>
+
+      <!--TODO: Home page Grid-->
+      <div class="container" id="home-cont">
+
+        <!--TODO: Homepage Navigation bar -->
+        <div class="nav-bar">
+          <ul class="nav-list">
+             <li class="home-item">
+               <a class="material-icons" href="Index.html">home</a>
+             </li>
+             <li> 
+               <a href="HtmlPages/SubscribePage.html">Subscribe</a> 
+             </li>
+             <li>
+               <a href="#">About Us</a>
+             </li>
+             <li> 
+              <a class="material-icons" id="search-icon" href="#">search</a> 
+             </li>
+          </ul> 
+        </div>   
+
+        <!--TODO: Homepage Header -->
+        <div class="plog-header">
+          <h1>Beauty Of Flowers</h1>
+        </div>        
+
+        <div class="bolg-card">
+           <!--TODO: Homepage Flexbox cards-->
+           <div class="felx-card">
+
+              <div class="card1">
+                 <img src="Images/Gardenia2.jpg" alt="Gardenia flower">
+                 <h1>Gardenias</h1>
+                 <button onclick="pageRedirect()">
+                   Read more
+                 </button>
+              </div>
+
+              <div class="card2">
+                <img src="Images/Tulips.jpg" alt="Tulip flower">
+                <h1>Tulips</h1>
+                <button onclick="pageRedirect2()">
+                  Read more
+                </button>
+             </div>
+
+             <div class="card3">
+              <img src="Images/Aster.jpg" alt="Aster flower">
+              <h1>Aster</h1>
+              <button onclick="pageRedirect3()">
+                Read more
+              </button>
+             </div>
+
+             <div class="card4">
+              <img src="Images/Peonies.jpg" alt="Peonie flower">
+              <h1>Peonies</h1>
+              <button onclick="pageRedirect4()">
+                Read more
+              </button>
+             </div>
+
+           </div>
+        </div>
+
+        <!--TODO: Homepage Footer -->
+        <div class="footer">
+          Copyright © 2021
+        </div>
+
+      </div>
+
+  </body>
+</html>

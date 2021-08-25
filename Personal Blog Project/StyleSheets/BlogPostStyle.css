@@ -1,0 +1,168 @@
+/*TODO: Author information styling*/
+.avatar {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+#author-info {
+  line-height: 3px;
+  margin: 40px;
+}
+
+#author-info h3 {
+  height: 12px;
+  display: inline;
+  margin-left: 30px;
+}
+
+.h5 {
+  line-height: 20px;
+}
+
+#author-info h4,
+#author-info h5,
+#facebook
+ {
+  color: #1f2932;
+  margin-left: 80px;
+}
+
+/*TODO: Social Sharing styling */
+#twitter,
+#linkedin {
+  color: #1f2932;
+  width: 24px;
+  height: 24px;
+  margin-left: 5px;
+}
+
+#facebook {
+  width: 24px;
+  height: 24px;
+}
+
+#TulipPost-img {
+  width: 400px;
+  height: 300px;
+}
+
+blockquote {
+  background-color: #ebe6e6e7;
+  padding: 15px 20px;
+}
+
+/*TODO: Small Screen size*/
+#blog-cont {
+  display: grid;
+  grid-template-columns: 600px;
+  grid-template-rows: 50px 100px 300px 5400px 40px;
+  grid-template-areas: "nav"
+  "hd"
+  "info"
+  "cont"
+  "ft";
+}
+
+.f-auther {
+  grid-area: info;
+}
+
+.post-content {
+grid-area: cont;
+align-items: center;
+text-align: center;
+
+}
+
+.post-content img {
+  width: 400px;
+  height: 280px ;
+}
+
+article {
+ font-size: 20px;
+ text-align: justify;
+ height: 400px;
+ width: 400px;
+ margin-left: 100px;
+ margin-top: 40px;
+}
+
+#img-fig {
+  text-align: center;
+  font-size: 15px;
+}
+
+#TulipPost-img {
+  width: 350px;
+}
+
+/*TODO: Mediam Screen size*/
+@media(min-width:430px) and (max-width:768px){
+  #blog-cont{ 
+    display: grid;
+    grid-template-columns: 700;
+    grid-template-rows: 50px 100px 300px 4300px 40px;
+    grid-template-areas:"nav nav nav nav"
+    "hd hd hd hd" 
+    "info info info info"  
+    "cont cont cont cont"
+    "ft ft ft ft";
+  }
+
+  .post-content img {
+    width: 700px;
+    height: 450px;
+  }
+
+  article {
+    margin-left: 90px;
+    height: 400px;
+    width: 600px;
+  }
+
+  #TulipPost-img {
+    width: 550px;
+    height: 400px;
+  }
+}
+
+/*TODO: large Screen size*/
+@media(min-width:770px){
+  #blog-cont{ 
+    display: grid;
+    grid-template-columns: 800px;
+    grid-template-rows: 50px 100px 300px 4000px 40px;
+    grid-template-areas:"nav nav nav nav nav nav nav nav"
+    "hd hd hd hd hd hd hd hd" 
+    "info info info info info info info info"
+    "cont cont cont cont cont cont cont cont"  
+    "ft ft ft ft ft ft ft ft";
+  }
+
+  .post-content img {
+    width: 900px;
+    height: 550px;
+  }
+
+  article {
+    height: 400px;
+    width: 700px;
+    margin-left: 150px;
+  }
+
+  #TulipPost-img {
+    width: 600px;
+    height: 400px;
+  }
+}
+
+/*TODO: extra large Screen size*/
+@media(min-width:1440px){
+  article {
+    height: 400px;
+    width: 700px;
+    margin-left: 360px;
+  }
+}
